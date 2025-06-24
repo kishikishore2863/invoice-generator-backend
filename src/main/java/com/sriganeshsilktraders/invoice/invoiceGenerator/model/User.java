@@ -32,6 +32,8 @@ public class User implements UserDetails {
 
     private String role; // "ADMIN" or "STAFF"
 
+    private boolean emailVerified; // default false
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of();
